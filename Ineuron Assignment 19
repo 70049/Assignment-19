@@ -1,0 +1,66 @@
+Q1.   Write a python program to create a simple function to print "MySirG".
+Ans.   def f1():
+         print('''"MySirG"''')
+       f1()  
+       
+Q2.  Write a python program to create a function which exepect two argunment and print them in a function body.
+Ans.   def f1(a,b):
+         c=a+b
+         print("Sum of Two Numbers Is: ",c)
+       f1(10,200)
+       
+Q3.  Write a python program to create a function which expect unknown number of argunment.
+Ans.   def Sum(*t):
+          A=sum(t)
+          retrun A
+      Sum(10,20,50,46,1230)
+      
+Q4.  Write a python program to create a function which expect Kwargs argunment.
+Ans.  def f1(**cham):
+           print(cham,type(cham))
+      f1(a=10,b=20,c=321)
+      
+Q5.  Write a python program to create a function which take a list as an argunment.
+ANs.   def ch(*a):
+           for w in a:
+                c=len(w)
+           return(c)     
+       print(ch([10,21,15,41]))
+       
+Q6.   Write a python program to create a function which find a maximum of four numbers.
+ANs.   def Max(*a):
+           c=max(a)
+           return c
+       print("Maximum of given Four NUmber Is:-",Max(20,15,123,480)) 
+       
+Q7.   Write a python program to sum all the number in a list.
+Ans.   def Sum_list(*a)
+           for e in a:
+               c=sum(a)
+           return(c)
+       print(Sum_list([10,20,30,41]))
+       
+//Q8.   Write a python program to multiply all the numbers in the list.
+ANs.   def Mul_list(*a):
+            c=a*2                                                      '''We can't Multiply list item'''
+            print("Result of all numbers Multiplications Is:- ",c)
+       Mul_list([10,20,40,847])
+       
+Q9.   Write a python program to create a function to check wether a given number falls in a given range.
+Ans.   def check(d,e=0,f=0):
+          if din range(1,100):
+                print("Yes,Given number is in Range")
+          else:
+                print("No,Given Nummber Isn't in range")
+        check(5,10,12)
+        
+Q10.  Write a function to check wether a given number is even or odd.
+Ans.   def even_odd():
+            a=int(input("Enter a number: "))
+            if a%2==0:
+                print("Even Number")
+            else:
+                print("Odd Number")
+        even_odd()    
+        
+        
